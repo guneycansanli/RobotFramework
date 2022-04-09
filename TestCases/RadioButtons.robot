@@ -21,5 +21,5 @@ Testing Radio Buttons and Check Boxes
     unselect checkbox    Manual Tester
     close browser
 
-*** Variables ***
+*** Keywords ***
 

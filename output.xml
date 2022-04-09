@@ -1,58 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220409 14:05:04.653" rpa="false" schemaversion="3">
-<suite id="s1" name="RadioButtons" source="C:\Users\EGNUASN\PycharmProjects\RobotFramework\TestCases\RadioButtons.robot">
-<test id="s1-t1" name="Testing Radio Buttons and Check Boxes" line="9">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220409 17:09:19.945" rpa="false" schemaversion="3">
+<suite id="s1" name="Dropdowns" source="C:\Users\EGNUASN\PycharmProjects\RobotFramework\TestCases\Dropdowns.robot">
+<test id="s1-t1" name="Handling DropDowns and Lists" line="9">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
-<arg>chrome</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220409 14:05:04.891" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm'.</msg>
-<status status="PASS" starttime="20220409 14:05:04.891" endtime="20220409 14:05:13.342"/>
+<msg timestamp="20220409 17:09:20.211" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm'.</msg>
+<status status="PASS" starttime="20220409 17:09:20.211" endtime="20220409 17:09:29.113"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220409 14:05:13.343" endtime="20220409 14:05:13.463"/>
+<status status="PASS" starttime="20220409 17:09:29.115" endtime="20220409 17:09:29.242"/>
 </kw>
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>2seconds</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220409 14:05:13.463" endtime="20220409 14:05:13.463"/>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>continents</arg>
+<arg>Asia</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220409 17:09:29.242" level="INFO">Selecting options from selection list 'continents' by label Asia.</msg>
+<status status="PASS" starttime="20220409 17:09:29.242" endtime="20220409 17:09:29.289"/>
 </kw>
-<kw name="Select Radio Button" library="SeleniumLibrary">
-<arg>sex</arg>
-<arg>Female</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20220409 14:05:13.463" level="INFO">Selecting 'Female' from radio button 'sex'.</msg>
-<status status="PASS" starttime="20220409 14:05:13.463" endtime="20220409 14:05:22.727"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 17:09:32.308" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220409 17:09:29.304" endtime="20220409 17:09:32.308"/>
 </kw>
-<kw name="Select Radio Button" library="SeleniumLibrary">
-<arg>exp</arg>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>continents</arg>
 <arg>5</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20220409 14:05:22.728" level="INFO">Selecting '5' from radio button 'exp'.</msg>
-<status status="PASS" starttime="20220409 14:05:22.728" endtime="20220409 14:05:28.820"/>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20220409 17:09:32.316" level="INFO">Selecting options from selection list 'continents' by index 5.</msg>
+<status status="PASS" starttime="20220409 17:09:32.315" endtime="20220409 17:09:33.818"/>
 </kw>
-<kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>Manual Tester</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20220409 14:05:28.820" level="INFO">Selecting checkbox 'Manual Tester'.</msg>
-<status status="PASS" starttime="20220409 14:05:28.820" endtime="20220409 14:05:36.895"/>
-</kw>
-<kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>Automation Tester</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20220409 14:05:36.895" level="INFO">Selecting checkbox 'Automation Tester'.</msg>
-<status status="PASS" starttime="20220409 14:05:36.895" endtime="20220409 14:05:45.001"/>
-</kw>
-<kw name="Unselect Checkbox" library="SeleniumLibrary">
-<arg>Manual Tester</arg>
-<doc>Removes the selection of checkbox identified by ``locator``.</doc>
-<msg timestamp="20220409 14:05:45.001" level="INFO">Unselecting checkbox 'Manual Tester'.</msg>
-<status status="PASS" starttime="20220409 14:05:45.001" endtime="20220409 14:05:53.083"/>
-</kw>
-<status status="PASS" starttime="20220409 14:05:04.891" endtime="20220409 14:05:53.083"/>
+<status status="PASS" starttime="20220409 17:09:20.211" endtime="20220409 17:09:33.819"/>
 </test>
-<status status="PASS" starttime="20220409 14:05:04.653" endtime="20220409 14:05:53.083"/>
+<status status="PASS" starttime="20220409 17:09:19.945" endtime="20220409 17:09:33.825"/>
 </suite>
 <statistics>
 <total>
@@ -61,7 +44,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="RadioButtons">RadioButtons</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Dropdowns">Dropdowns</stat>
 </suite>
 </statistics>
 <errors>
