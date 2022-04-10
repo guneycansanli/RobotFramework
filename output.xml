@@ -1,41 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220409 17:09:19.945" rpa="false" schemaversion="3">
-<suite id="s1" name="Dropdowns" source="C:\Users\EGNUASN\PycharmProjects\RobotFramework\TestCases\Dropdowns.robot">
-<test id="s1-t1" name="Handling DropDowns and Lists" line="9">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220410 14:53:15.395" rpa="false" schemaversion="3">
+<suite id="s1" name="TimeoutTests" source="C:\Users\EGNUASN\PycharmProjects\RobotFramework\TestCases\TimeoutTests.robot">
+<test id="s1-t1" name="RegTest" line="6">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>http://demowebshop.tricentis.com/register</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220409 17:09:20.211" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm'.</msg>
-<status status="PASS" starttime="20220409 17:09:20.211" endtime="20220409 17:09:29.113"/>
+<msg timestamp="20220410 14:53:15.649" level="INFO">Opening browser 'chrome' to base url 'http://demowebshop.tricentis.com/register'.</msg>
+<status status="PASS" starttime="20220410 14:53:15.649" endtime="20220410 14:53:19.180"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220409 17:09:29.115" endtime="20220409 17:09:29.242"/>
+<status status="PASS" starttime="20220410 14:53:19.181" endtime="20220410 14:53:19.308"/>
 </kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>continents</arg>
-<arg>Asia</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220409 17:09:29.242" level="INFO">Selecting options from selection list 'continents' by label Asia.</msg>
-<status status="PASS" starttime="20220409 17:09:29.242" endtime="20220409 17:09:29.289"/>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220410 14:53:19.308" endtime="20220410 14:53:19.324"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220409 17:09:32.308" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220409 17:09:29.304" endtime="20220409 17:09:32.308"/>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>Gender</arg>
+<arg>M</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220410 14:53:19.324" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20220410 14:53:19.324" endtime="20220410 14:53:19.402"/>
 </kw>
-<kw name="Select From List By Index" library="SeleniumLibrary">
-<arg>continents</arg>
-<arg>5</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20220409 17:09:32.316" level="INFO">Selecting options from selection list 'continents' by index 5.</msg>
-<status status="PASS" starttime="20220409 17:09:32.315" endtime="20220409 17:09:33.818"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:FirstName</arg>
+<arg>Guney</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220410 14:53:19.403" level="INFO">Typing text 'Guney' into text field 'name:FirstName'.</msg>
+<status status="PASS" starttime="20220410 14:53:19.403" endtime="20220410 14:53:19.489"/>
 </kw>
-<status status="PASS" starttime="20220409 17:09:20.211" endtime="20220409 17:09:33.819"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:LastName</arg>
+<arg>sanli</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220410 14:53:19.492" level="INFO">Typing text 'sanli' into text field 'name:LastName'.</msg>
+<status status="PASS" starttime="20220410 14:53:19.489" endtime="20220410 14:53:19.579"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:Email</arg>
+<arg>guney@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220410 14:53:19.580" level="INFO">Typing text 'guney@gmail.com' into text field 'name:Email'.</msg>
+<status status="PASS" starttime="20220410 14:53:19.580" endtime="20220410 14:53:19.680"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:Password</arg>
+<arg>guneyguney</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220410 14:53:19.681" level="INFO">Typing text 'guneyguney' into text field 'name:Password'.</msg>
+<status status="PASS" starttime="20220410 14:53:19.680" endtime="20220410 14:53:19.770"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:ConfirmPassword</arg>
+<arg>guneyguney</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220410 14:53:19.771" level="INFO">Typing text 'guneyguney' into text field 'name:ConfirmPassword'.</msg>
+<status status="PASS" starttime="20220410 14:53:19.771" endtime="20220410 14:53:19.859"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220410 14:53:19.859" endtime="20220410 14:53:22.522"/>
+</kw>
+<status status="PASS" starttime="20220410 14:53:15.649" endtime="20220410 14:53:22.522"/>
 </test>
-<status status="PASS" starttime="20220409 17:09:19.945" endtime="20220409 17:09:33.825"/>
+<status status="PASS" starttime="20220410 14:53:15.395" endtime="20220410 14:53:22.522"/>
 </suite>
 <statistics>
 <total>
@@ -44,7 +75,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Dropdowns">Dropdowns</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TimeoutTests">TimeoutTests</stat>
 </suite>
 </statistics>
 <errors>
