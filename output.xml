@@ -1,91 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220411 12:15:27.086" rpa="false" schemaversion="3">
-<suite id="s1" name="FramesDemo" source="C:\Users\EGNUASN\PycharmProjects\RobotFramework\TestCases\FramesDemo.robot">
-<test id="s1-t1" name="Testing Frames" line="6">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220411 13:47:42.657" rpa="false" schemaversion="3">
+<suite id="s1" name="SwitchToMultipleBrowsers" source="C:\Users\EGNUASN\PycharmProjects\RobotFramework\TestCases\SwitchToMultipleBrowsers.robot">
+<test id="s1-t1" name="MultipleBrowsersTest" line="5">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html</arg>
+<arg>https://www.google.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220411 12:15:27.340" level="INFO">Opening browser 'chrome' to base url 'https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html'.</msg>
-<status status="PASS" starttime="20220411 12:15:27.340" endtime="20220411 12:15:29.944"/>
+<msg timestamp="20220411 13:47:42.932" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20220411 13:47:42.932" endtime="20220411 13:47:46.928"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220411 12:15:29.945" endtime="20220411 12:15:30.093"/>
-</kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>packageListFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<msg timestamp="20220411 12:15:30.096" level="INFO">Selecting frame 'packageListFrame'.</msg>
-<status status="PASS" starttime="20220411 12:15:30.095" endtime="20220411 12:15:30.219"/>
-</kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>org.openqa.selenium</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220411 12:15:30.220" level="INFO">Clicking link 'org.openqa.selenium'.</msg>
-<status status="PASS" starttime="20220411 12:15:30.219" endtime="20220411 12:15:30.301"/>
-</kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20220411 12:15:30.302" endtime="20220411 12:15:30.305"/>
+<status status="PASS" starttime="20220411 13:47:46.929" endtime="20220411 13:47:47.087"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220411 12:15:33.320" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220411 12:15:30.306" endtime="20220411 12:15:33.320"/>
+<msg timestamp="20220411 13:47:50.100" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220411 13:47:47.088" endtime="20220411 13:47:50.100"/>
 </kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>packageFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<msg timestamp="20220411 12:15:33.320" level="INFO">Selecting frame 'packageFrame'.</msg>
-<status status="PASS" starttime="20220411 12:15:33.320" endtime="20220411 12:15:33.342"/>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.bing.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220411 13:47:50.101" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
+<status status="PASS" starttime="20220411 13:47:50.101" endtime="20220411 13:47:53.387"/>
 </kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>WebDriver</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220411 12:15:33.342" level="INFO">Clicking link 'WebDriver'.</msg>
-<status status="PASS" starttime="20220411 12:15:33.342" endtime="20220411 12:15:33.439"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220411 13:47:53.388" endtime="20220411 13:47:53.566"/>
 </kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20220411 12:15:33.441" endtime="20220411 12:15:33.445"/>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20220411 13:47:53.569" endtime="20220411 13:47:53.570"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title1}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20220411 13:47:53.589" level="INFO">${title1} = Google</msg>
+<status status="PASS" starttime="20220411 13:47:53.571" endtime="20220411 13:47:53.589"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${title1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220411 13:47:53.591" endtime="20220411 13:47:53.594"/>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20220411 13:47:53.596" endtime="20220411 13:47:53.597"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title2}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20220411 13:47:53.641" level="INFO">${title2} = Bing</msg>
+<status status="PASS" starttime="20220411 13:47:53.601" endtime="20220411 13:47:53.641"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${title2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220411 13:47:53.642" endtime="20220411 13:47:53.644"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220411 12:15:36.447" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220411 12:15:33.446" endtime="20220411 12:15:36.447"/>
+<msg timestamp="20220411 13:47:56.647" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220411 13:47:53.645" endtime="20220411 13:47:56.647"/>
 </kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>classFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<msg timestamp="20220411 12:15:36.447" level="INFO">Selecting frame 'classFrame'.</msg>
-<status status="PASS" starttime="20220411 12:15:36.447" endtime="20220411 12:15:36.478"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220411 13:47:56.650" endtime="20220411 13:48:02.180"/>
 </kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>Help</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220411 12:15:36.478" level="INFO">Clicking link 'Help'.</msg>
-<status status="PASS" starttime="20220411 12:15:36.478" endtime="20220411 12:15:37.028"/>
-</kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20220411 12:15:37.029" endtime="20220411 12:15:37.034"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220411 12:15:40.057" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220411 12:15:37.035" endtime="20220411 12:15:40.057"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220411 12:15:40.057" endtime="20220411 12:15:42.719"/>
-</kw>
-<status status="PASS" starttime="20220411 12:15:27.340" endtime="20220411 12:15:42.719"/>
+<status status="PASS" starttime="20220411 13:47:42.931" endtime="20220411 13:48:02.181"/>
 </test>
-<status status="PASS" starttime="20220411 12:15:27.101" endtime="20220411 12:15:42.719"/>
+<status status="PASS" starttime="20220411 13:47:42.660" endtime="20220411 13:48:02.183"/>
 </suite>
 <statistics>
 <total>
@@ -94,7 +83,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="FramesDemo">FramesDemo</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="SwitchToMultipleBrowsers">SwitchToMultipleBrowsers</stat>
 </suite>
 </statistics>
 <errors>
