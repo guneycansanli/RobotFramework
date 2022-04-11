@@ -12,3 +12,5 @@ MyTestCase
 
     #close browser    #close last one
     close all browsers
+
+*** Keywords ***
