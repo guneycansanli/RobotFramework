@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220412 16:48:39.663" rpa="false" schemaversion="3">
-<suite id="s1" name="DataDrivenTesting1" source="C:\Users\EGNUASN\PycharmProjects\RobotFramework\TestCases\DataDrivenTesting1.robot">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220413 12:23:08.666" rpa="false" schemaversion="3">
+<suite id="s1" name="DataDrivenTests Csv" source="C:\Users\EGNUASN\PycharmProjects\RobotFramework\TestCases\DataDrivenTests_Csv.robot">
 <kw name="Open my browser" library="login_resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220412 16:48:39.933" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
-<status status="PASS" starttime="20220412 16:48:39.933" endtime="20220412 16:48:43.615"/>
+<msg timestamp="20220413 12:23:08.967" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20220413 12:23:08.951" endtime="20220413 12:23:12.840"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220412 16:48:43.615" endtime="20220412 16:48:43.740"/>
+<status status="PASS" starttime="20220413 12:23:12.840" endtime="20220413 12:23:12.969"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:39.933" endtime="20220412 16:48:43.741"/>
+<status status="PASS" starttime="20220413 12:23:08.951" endtime="20220413 12:23:12.969"/>
 </kw>
-<test id="s1-t1" name="Right user empty pass" line="9">
-<kw name="Invalid login">
+<test id="s1-t1" name="LoginTestwithExcel using admin@yourstore.com and adm" line="12">
+<kw name="Invalid Login">
 <arg>admin@yourstore.com</arg>
-<arg>${EMPTY}</arg>
+<arg>adm</arg>
 <kw name="Input user name" library="login_resources">
 <arg>${username}</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:43.744" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20220412 16:48:43.743" endtime="20220412 16:48:43.885"/>
+<msg timestamp="20220413 12:23:12.969" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220413 12:23:12.969" endtime="20220413 12:23:13.106"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:43.743" endtime="20220412 16:48:43.885"/>
+<status status="PASS" starttime="20220413 12:23:12.969" endtime="20220413 12:23:13.106"/>
 </kw>
 <kw name="Input password" library="login_resources">
 <arg>${password}</arg>
@@ -36,80 +36,36 @@
 <arg>id:Password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:43.886" level="INFO">Typing text '' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220412 16:48:43.885" endtime="20220412 16:48:43.970"/>
+<msg timestamp="20220413 12:23:13.107" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220413 12:23:13.106" endtime="20220413 12:23:13.199"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:43.885" endtime="20220412 16:48:43.970"/>
+<status status="PASS" starttime="20220413 12:23:13.106" endtime="20220413 12:23:13.199"/>
 </kw>
 <kw name="Click login button" library="login_resources">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:43.970" level="INFO">Clicking element 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button'.</msg>
-<status status="PASS" starttime="20220412 16:48:43.970" endtime="20220412 16:48:44.382"/>
+<msg timestamp="20220413 12:23:13.199" level="INFO">Clicking element 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20220413 12:23:13.199" endtime="20220413 12:23:13.590"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:43.970" endtime="20220412 16:48:44.382"/>
+<status status="PASS" starttime="20220413 12:23:13.199" endtime="20220413 12:23:13.591"/>
 </kw>
 <kw name="Error message should be visible" library="login_resources">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Login was unsuccessful</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220412 16:48:44.401" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
-<status status="PASS" starttime="20220412 16:48:44.383" endtime="20220412 16:48:44.401"/>
+<msg timestamp="20220413 12:23:13.611" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220413 12:23:13.592" endtime="20220413 12:23:13.611"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:44.382" endtime="20220412 16:48:44.402"/>
+<status status="PASS" starttime="20220413 12:23:13.591" endtime="20220413 12:23:13.612"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:43.742" endtime="20220412 16:48:44.402"/>
+<status status="PASS" starttime="20220413 12:23:12.969" endtime="20220413 12:23:13.612"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:43.741" endtime="20220412 16:48:44.402"/>
+<status status="PASS" starttime="20220413 12:23:12.969" endtime="20220413 12:23:13.612"/>
 </test>
-<test id="s1-t2" name="Right user wrong pass" line="10">
-<kw name="Invalid login">
-<arg>admin@yourstore.com</arg>
-<arg>xyz</arg>
-<kw name="Input user name" library="login_resources">
-<arg>${username}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Email</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:44.405" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20220412 16:48:44.405" endtime="20220412 16:48:44.504"/>
-</kw>
-<status status="PASS" starttime="20220412 16:48:44.405" endtime="20220412 16:48:44.504"/>
-</kw>
-<kw name="Input password" library="login_resources">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Password</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:44.505" level="INFO">Typing text 'xyz' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220412 16:48:44.505" endtime="20220412 16:48:44.584"/>
-</kw>
-<status status="PASS" starttime="20220412 16:48:44.504" endtime="20220412 16:48:44.584"/>
-</kw>
-<kw name="Click login button" library="login_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:44.584" level="INFO">Clicking element 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button'.</msg>
-<msg timestamp="20220412 16:48:44.727" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220412 16:48:44.728" level="FAIL">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</msg>
-<status status="FAIL" starttime="20220412 16:48:44.584" endtime="20220412 16:48:44.731"/>
-</kw>
-<status status="FAIL" starttime="20220412 16:48:44.584" endtime="20220412 16:48:44.732"/>
-</kw>
-<kw name="Error message should be visible" library="login_resources">
-<status status="NOT RUN" starttime="20220412 16:48:44.732" endtime="20220412 16:48:44.732"/>
-</kw>
-<status status="FAIL" starttime="20220412 16:48:44.404" endtime="20220412 16:48:44.732"/>
-</kw>
-<status status="FAIL" starttime="20220412 16:48:44.404" endtime="20220412 16:48:44.733">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</status>
-</test>
-<test id="s1-t3" name="Right user right pass" line="11">
-<kw name="Invalid login">
-<arg>admin@yourstore.com</arg>
+<test id="s1-t2" name="LoginTestwithExcel using adm@yourstore.com and admin" line="12">
+<kw name="Invalid Login">
+<arg>adm@yourstore.com</arg>
 <arg>admin</arg>
 <kw name="Input user name" library="login_resources">
 <arg>${username}</arg>
@@ -117,10 +73,10 @@
 <arg>id:Email</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:44.737" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20220412 16:48:44.737" endtime="20220412 16:48:44.842"/>
+<msg timestamp="20220413 12:23:13.612" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220413 12:23:13.612" endtime="20220413 12:23:13.710"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:44.736" endtime="20220412 16:48:44.842"/>
+<status status="PASS" starttime="20220413 12:23:13.612" endtime="20220413 12:23:13.711"/>
 </kw>
 <kw name="Input password" library="login_resources">
 <arg>${password}</arg>
@@ -128,87 +84,43 @@
 <arg>id:Password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:44.843" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220412 16:48:44.842" endtime="20220412 16:48:44.910"/>
+<msg timestamp="20220413 12:23:13.712" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220413 12:23:13.711" endtime="20220413 12:23:13.800"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:44.842" endtime="20220412 16:48:44.910"/>
+<status status="PASS" starttime="20220413 12:23:13.711" endtime="20220413 12:23:13.800"/>
 </kw>
 <kw name="Click login button" library="login_resources">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:44.910" level="INFO">Clicking element 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button'.</msg>
-<msg timestamp="20220412 16:48:45.034" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220412 16:48:45.034" level="FAIL">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</msg>
-<status status="FAIL" starttime="20220412 16:48:44.910" endtime="20220412 16:48:45.034"/>
+<msg timestamp="20220413 12:23:13.801" level="INFO">Clicking element 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button'.</msg>
+<msg timestamp="20220413 12:23:13.943" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220413 12:23:13.944" level="FAIL">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</msg>
+<status status="FAIL" starttime="20220413 12:23:13.800" endtime="20220413 12:23:13.947"/>
 </kw>
-<status status="FAIL" starttime="20220412 16:48:44.910" endtime="20220412 16:48:45.034"/>
+<status status="FAIL" starttime="20220413 12:23:13.800" endtime="20220413 12:23:13.948"/>
 </kw>
 <kw name="Error message should be visible" library="login_resources">
-<status status="NOT RUN" starttime="20220412 16:48:45.034" endtime="20220412 16:48:45.034"/>
+<status status="NOT RUN" starttime="20220413 12:23:13.948" endtime="20220413 12:23:13.948"/>
 </kw>
-<status status="FAIL" starttime="20220412 16:48:44.735" endtime="20220412 16:48:45.034"/>
+<status status="FAIL" starttime="20220413 12:23:13.612" endtime="20220413 12:23:13.948"/>
 </kw>
-<status status="FAIL" starttime="20220412 16:48:44.735" endtime="20220412 16:48:45.034">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</status>
+<status status="FAIL" starttime="20220413 12:23:13.612" endtime="20220413 12:23:13.949">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</status>
 </test>
-<test id="s1-t4" name="Right user empty pass" line="12">
-<kw name="Invalid login">
-<arg>admin@yourstore.com</arg>
-<arg>${EMPTY}</arg>
+<test id="s1-t3" name="LoginTestwithExcel using adm123@yourstore.com and adm" line="12">
+<kw name="Invalid Login">
+<arg>adm123@yourstore.com</arg>
+<arg>adm</arg>
 <kw name="Input user name" library="login_resources">
 <arg>${username}</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:45.050" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20220412 16:48:45.050" endtime="20220412 16:48:45.157"/>
+<msg timestamp="20220413 12:23:13.954" level="INFO">Typing text 'adm123@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20220413 12:23:13.953" endtime="20220413 12:23:14.066"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:45.050" endtime="20220412 16:48:45.157"/>
-</kw>
-<kw name="Input password" library="login_resources">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Password</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:45.158" level="INFO">Typing text '' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220412 16:48:45.158" endtime="20220412 16:48:45.215"/>
-</kw>
-<status status="PASS" starttime="20220412 16:48:45.158" endtime="20220412 16:48:45.216"/>
-</kw>
-<kw name="Click login button" library="login_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:45.216" level="INFO">Clicking element 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button'.</msg>
-<msg timestamp="20220412 16:48:45.351" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220412 16:48:45.351" level="FAIL">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</msg>
-<status status="FAIL" starttime="20220412 16:48:45.216" endtime="20220412 16:48:45.352"/>
-</kw>
-<status status="FAIL" starttime="20220412 16:48:45.216" endtime="20220412 16:48:45.352"/>
-</kw>
-<kw name="Error message should be visible" library="login_resources">
-<status status="NOT RUN" starttime="20220412 16:48:45.353" endtime="20220412 16:48:45.353"/>
-</kw>
-<status status="FAIL" starttime="20220412 16:48:45.050" endtime="20220412 16:48:45.353"/>
-</kw>
-<status status="FAIL" starttime="20220412 16:48:45.050" endtime="20220412 16:48:45.354">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</status>
-</test>
-<test id="s1-t5" name="Right user wrong pass" line="13">
-<kw name="Invalid login">
-<arg>admin@yourstore.com</arg>
-<arg>xyz</arg>
-<kw name="Input user name" library="login_resources">
-<arg>${username}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Email</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:45.360" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20220412 16:48:45.359" endtime="20220412 16:48:45.453"/>
-</kw>
-<status status="PASS" starttime="20220412 16:48:45.359" endtime="20220412 16:48:45.453"/>
+<status status="PASS" starttime="20220413 12:23:13.953" endtime="20220413 12:23:14.066"/>
 </kw>
 <kw name="Input password" library="login_resources">
 <arg>${password}</arg>
@@ -216,50 +128,48 @@
 <arg>id:Password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:45.454" level="INFO">Typing text 'xyz' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220412 16:48:45.454" endtime="20220412 16:48:45.517"/>
+<msg timestamp="20220413 12:23:14.067" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220413 12:23:14.067" endtime="20220413 12:23:14.137"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:45.454" endtime="20220412 16:48:45.518"/>
+<status status="PASS" starttime="20220413 12:23:14.066" endtime="20220413 12:23:14.137"/>
 </kw>
 <kw name="Click login button" library="login_resources">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220412 16:48:45.518" level="INFO">Clicking element 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button'.</msg>
-<msg timestamp="20220412 16:48:45.642" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220412 16:48:45.642" level="FAIL">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</msg>
-<status status="FAIL" starttime="20220412 16:48:45.518" endtime="20220412 16:48:45.642"/>
+<msg timestamp="20220413 12:23:14.138" level="INFO">Clicking element 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button'.</msg>
+<msg timestamp="20220413 12:23:14.272" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220413 12:23:14.272" level="FAIL">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</msg>
+<status status="FAIL" starttime="20220413 12:23:14.137" endtime="20220413 12:23:14.272"/>
 </kw>
-<status status="FAIL" starttime="20220412 16:48:45.518" endtime="20220412 16:48:45.642"/>
+<status status="FAIL" starttime="20220413 12:23:14.137" endtime="20220413 12:23:14.272"/>
 </kw>
 <kw name="Error message should be visible" library="login_resources">
-<status status="NOT RUN" starttime="20220412 16:48:45.642" endtime="20220412 16:48:45.642"/>
+<status status="NOT RUN" starttime="20220413 12:23:14.272" endtime="20220413 12:23:14.272"/>
 </kw>
-<status status="FAIL" starttime="20220412 16:48:45.358" endtime="20220412 16:48:45.642"/>
+<status status="FAIL" starttime="20220413 12:23:13.952" endtime="20220413 12:23:14.272"/>
 </kw>
-<status status="FAIL" starttime="20220412 16:48:45.357" endtime="20220412 16:48:45.642">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</status>
+<status status="FAIL" starttime="20220413 12:23:13.951" endtime="20220413 12:23:14.272">Element with locator 'xpath:/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button' not found.</status>
 </test>
 <kw name="Close browsers" library="login_resources" type="TEARDOWN">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220412 16:48:45.642" endtime="20220412 16:48:48.336"/>
+<status status="PASS" starttime="20220413 12:23:14.272" endtime="20220413 12:23:16.944"/>
 </kw>
-<status status="PASS" starttime="20220412 16:48:45.642" endtime="20220412 16:48:48.336"/>
+<status status="PASS" starttime="20220413 12:23:14.272" endtime="20220413 12:23:16.944"/>
 </kw>
-<status status="FAIL" starttime="20220412 16:48:39.679" endtime="20220412 16:48:48.336"/>
+<status status="FAIL" starttime="20220413 12:23:08.681" endtime="20220413 12:23:16.944"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="4" skip="0">All Tests</stat>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="4" skip="0" id="s1" name="DataDrivenTesting1">DataDrivenTesting1</stat>
+<stat pass="1" fail="2" skip="0" id="s1" name="DataDrivenTests Csv">DataDrivenTests Csv</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220412 16:48:45.034" level="WARN">Multiple tests with name 'Right user empty pass' executed in suite 'DataDrivenTesting1'.</msg>
-<msg timestamp="20220412 16:48:45.356" level="WARN">Multiple tests with name 'Right user wrong pass' executed in suite 'DataDrivenTesting1'.</msg>
 </errors>
 </robot>
