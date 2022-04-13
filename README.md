@@ -21,4 +21,12 @@ numpy
 
 pandas
 
+robotframework-databaselibrary
+
+PyMyql
+
+Download mysql and mysql workbench (Create DB)
+
+
+https://franz-see.github.io/Robotframework-Database-Library/api/0.5/DatabaseLibrary.html
 
