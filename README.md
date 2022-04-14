@@ -48,3 +48,6 @@ pabot --processes 3 --outputdir Results TestCases\*.robot  (--outputdir Result f
 
 pabot --processes 3 --outputdir Results TestCases\Ta*.robot  (There are 3 test cases start with Ta*)
 
+headlesschrome no ui
+
+headlesFirefox no ui
