@@ -1,0 +1,7 @@
+datasources:a1727692ea3b365ac967a103ea731e0b7f6b8638
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:2cb032f3470980996e4e2d4fb21d48d408f946c7
+--suite Suites.TabbedWindows
+--suite Suites.TableDemo
+--suite Suites.Tagging

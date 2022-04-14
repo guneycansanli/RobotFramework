@@ -1,0 +1,28 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Tagging                                                                
+==============================================================================
+TC1 User RegistrationTest                                             This is user reg test
+user registration test is over
+| PASS |
+------------------------------------------------------------------------------
+TC2 LoginTest                                                         This is Login test
+Login test is over
+| PASS |
+------------------------------------------------------------------------------
+TC3 Change user settings                                              This is changing user settings test
+Changing user test is over
+| PASS |
+------------------------------------------------------------------------------
+TC4 Logout test                                                       This is logout test
+Logout test is over
+| PASS |
+------------------------------------------------------------------------------
+Suites.Tagging                                                        | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\EGNUASN\PycharmProjects\RobotFramework\Results\pabot_results\2\output.xml
