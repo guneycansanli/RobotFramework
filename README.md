@@ -51,3 +51,7 @@ pabot --processes 3 --outputdir Results TestCases\Ta*.robot  (There are 3 test c
 headlesschrome no ui
 
 headlesFirefox no ui
+
+Download jenkins .war execute java -jar jenkins.war
+
+localhost:8080 -> create project -> execute windows bash file
