@@ -7,6 +7,8 @@ Requirements Plugins Frameworks
 
 python
 
+Chrome driver 
+
 Seleninum
 
 robotframework
